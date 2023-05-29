@@ -96,10 +96,6 @@ main{
     border-color: green;
 }
 
-.caja-resultado{
-    display: inline;
-}
-
 .mensaje, .textos-mensaje, .btn-copiar{
     position: absolute;
 }
