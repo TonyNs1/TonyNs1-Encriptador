@@ -13,9 +13,14 @@ main{
     margin: 25px 25px;
 }
 
+.caja-texto{
+    display: inline-block;
+}
+
 .text-area{
     width: 350px;
     padding: 10px 10px;
+    font-size: 20px;
     border: none;
     color: #0a3871;
     text-transform: lowercase;
@@ -41,7 +46,7 @@ main{
 .vector h3{
     color: #495057;
     font-size: 18px;
-    margin: 195px 0 37px 0;
+    margin: 50px 0 37px 0;
 }
 
 .botones{
@@ -96,13 +101,14 @@ main{
     border-color: green;
 }
 
-.mensaje, .textos-mensaje, .btn-copiar{
-    position: absolute;
+.caja-resultado{
+    display: inline-block;
 }
     
 .mensaje{
     width: 350px;
     padding: 10px 10px;
+    font-size: 20px;
     margin-left: 50px;
     background: white;
     background-image: url(imagenes/Muñeco.png);
@@ -119,7 +125,7 @@ main{
 
 .textos-mensaje{
     width: 336px;
-    margin: 500px 0 0 70px;
+    margin: -300px 0 0 70px;
     background: none;
     font-family: 'Inter';
     font-style: normal;
@@ -148,7 +154,7 @@ main{
     color: #0a3871;
     cursor: pointer;
     height: 67px;
-    margin: 750px 0 0 70px;
+    margin: 105px 0 0 70px;
     width: 328px;
     transition: 1s all;
     font-size: 26px;
@@ -163,12 +169,12 @@ main{
 
     .logo{
         width: 20%;
+        margin-bottom: 10px;
     }
 
     main{
         width: auto;
         display: inline;
-        margin-top: 50px;
     }
 
     .text-area{
@@ -183,14 +189,15 @@ main{
     .botones {
         width: 95%;
         margin: 10px 0 20px 10px; 
+        display: inline;
     }
 
     .btn-encriptar, .btn-desencriptar{
         font-size: small;
     }
 
-    .mensaje, .textos-mensaje, .btn-copiar{
-        position: relative;
+    .caja-resultado{
+        display: inline;
     }
 
     .mensaje{
@@ -199,12 +206,12 @@ main{
     }
 
     .textos-mensaje{
-        margin: 0 40px;
+        margin: -250px 40px;
     }
 
     .btn-copiar{
         font-size: small;
         width: 95%;
-        margin: 10px 0 0 10px;
+        margin: 15px 0 0 10px;
     }
 }
