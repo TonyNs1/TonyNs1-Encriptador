@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
-const textos = document.querySelector(".texto-mensaje");
+const textos = document.querySelector(".textos-mensaje");
 
 
 /* La letra "e" es convertida para "enter"
