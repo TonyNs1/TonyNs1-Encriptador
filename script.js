@@ -1,6 +1,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
-const textos = document.querySelector(".textos-mensaje");
+const texto1 = document.querySelector("#texto1");
+const texto2 = document.querySelector("#texto2");
 
 
 /* La letra "e" es convertida para "enter"
@@ -15,7 +16,9 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
-    textos.innerHTML = "";
+    texto1.textContent = "";
+    texto2.textContent = "";
+    
 }
 
 function btnDesencriptar(){

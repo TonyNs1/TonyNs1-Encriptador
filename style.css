@@ -13,12 +13,8 @@ main{
     margin: 25px 25px;
 }
 
-.caja-texto{
-    display: inline-block;
-}
-
 .text-area{
-    width: 350px;
+    width: 336px;
     padding: 10px 10px;
     font-size: 20px;
     border: none;
@@ -101,15 +97,17 @@ main{
     border-color: green;
 }
 
-.caja-resultado{
-    display: inline-block;
+.caja-texto2{
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 15px;
 }
     
 .mensaje{
-    width: 350px;
+    width: 336px;
     padding: 10px 10px;
     font-size: 20px;
-    margin-left: 50px;
+    margin: 5px 5px 10px 5px;
     background: white;
     background-image: url(imagenes/Muñeco.png);
     background-repeat: no-repeat;
@@ -123,28 +121,27 @@ main{
     outline: none;
 }
 
-.textos-mensaje{
-    width: 336px;
-    margin: -300px 0 0 70px;
-    background: none;
-    font-family: 'Inter';
-    font-style: normal;
-    text-align: center;
+.text{
+    background-color: white;
+    margin-left: 15px;
 }
 
-.textos-mensaje h1{
+#texto1{
+    width: 336px;
     font-weight: 700;
     font-size: 24px;
     line-height: 25px;
     background: none;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
-.textos-mensaje h2{
+#texto2{
+    width: 336px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     background: none;
+    text-align: center;
 }
 
 .btn-copiar{
@@ -154,10 +151,12 @@ main{
     color: #0a3871;
     cursor: pointer;
     height: 67px;
-    margin: 105px 0 0 70px;
     width: 328px;
     transition: 1s all;
     font-size: 26px;
+    position: absolute;
+    top: 825px;
+    left: 810px;
 }
 
 .btn-copiar:active{
@@ -186,32 +185,29 @@ main{
         margin: 0 10px;
     }
 
+    .caja-texto2{
+        width: 95%;
+        margin: 5px 0 0 10px;
+    }
+
     .botones {
         width: 95%;
         margin: 10px 0 20px 10px; 
-        display: inline;
     }
 
     .btn-encriptar, .btn-desencriptar{
         font-size: small;
     }
 
-    .caja-resultado{
-        display: inline;
-    }
-
     .mensaje{
         width: 85%;
-        margin: 10px 0 10px 20px;
-    }
-
-    .textos-mensaje{
-        margin: -250px 40px;
+        margin: 0px 0 10px 20px;
     }
 
     .btn-copiar{
         font-size: small;
         width: 95%;
         margin: 15px 0 0 10px;
+        position: static;
     }
 }
