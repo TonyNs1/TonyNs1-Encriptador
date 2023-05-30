@@ -42,7 +42,7 @@ main{
 .vector h3{
     color: #495057;
     font-size: 18px;
-    margin: 50px 0 37px 0;
+    margin: 35px 0 37px 0;
 }
 
 .botones{
@@ -99,8 +99,9 @@ main{
 
 .caja-texto2{
     margin-left: 100px;
-    background-color: white;
     border-radius: 15px;
+    display: inline-flex;
+    background-color: white;
 }
     
 .mensaje{
@@ -121,7 +122,6 @@ main{
     outline: none;
 }
 
-
 #texto1{
     width: 336px;
     font-weight: 700;
@@ -129,7 +129,7 @@ main{
     line-height: 25px;
     background: none;
     text-align: center;
-    margin-left: 15px;
+    margin: 50px 15px;
     position: absolute;
 }
 
@@ -140,7 +140,7 @@ main{
     line-height: 16px;
     background: none;
     text-align: center;
-    margin: 60px 0 0 15px;
+    margin: 110px 0 0 15px;
     position: absolute;
 }
 
@@ -155,7 +155,7 @@ main{
     transition: 1s all;
     font-size: 20px;
     position: absolute;
-    top: 825px;
+    top: 810px;
     left: 810px;
 }
 
@@ -188,6 +188,7 @@ main{
     .caja-texto2{
         width: 95%;
         margin: 5px 0 0 10px;
+        display: inline-block;
     }
 
     .botones {
@@ -204,10 +205,16 @@ main{
         margin: 0px 0 10px 20px;
     }
 
+    #texto1, #texto2{
+        position: static;
+        margin: 1em;
+    }
+
     .btn-copiar{
         font-size: small;
         width: 95%;
         margin: 15px 0 0 10px;
         position: static;
+
     }
 }
