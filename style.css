@@ -123,7 +123,9 @@ main{
 
 .text{
     background-color: white;
-    margin-left: 15px;
+    position: absolute;
+    top: 650px;
+    left: 815px;
 }
 
 #texto1{
@@ -202,6 +204,11 @@ main{
     .mensaje{
         width: 85%;
         margin: 0px 0 10px 20px;
+    }
+
+    .text{
+        position: static;
+        margin: 0 0 10px 30px;
     }
 
     .btn-copiar{
