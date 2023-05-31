@@ -13,13 +13,13 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="imagenes/Logo.png" alt="logo de alura">
+            <h1><img class="logo" src="imagenes/Logo.png" alt="logo de alura">Encriptador</h1>
         </header>
         <main>
             <section class="caja-texto1">
                 <textarea class="text-area" cols="30" rows="25" placeholder="Ingrese el texto aquí"></textarea>
                 <div class="vector">
-                    <img src="imagenes/Vector.svg"><h3>Solo letras minúsculas y sin acentos</h3> 
+                    <h3>Solo letras minúsculas y sin acentos</h3> 
                 </div>
                 <div class="botones">
                     <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
@@ -27,12 +27,19 @@
                 </div> 
             </section>
             <section class="caja-texto2">
-                <textarea class="mensaje" cols="20" rows="20"></textarea>
-                <h1 id="texto1">Ningún mensaje fue encontrado</h1>
-                <h2 id="texto2">Ingresa el texto que desees encriptar o desencriptar.</h2> 
-                <button class="btn-copiar" onclick="btncopiar()">Copiar</button>  
+                <textarea class="mensaje" cols="20" rows="25"></textarea>
+                <div class="avisos">
+                    <p id="texto1">Ningún mensaje fue encontrado</p>
+                    <p id="texto2">Ingresa el texto que desees encriptar o desencriptar.</p> 
+                </div>
+                <div class="btncopiar">
+                    <button class="btn-copiar" onclick="btncopiar()">Copiar</button>
+                </div>
             </section>         
         </main>
+        <footer>
+            <p class="copyright">&copy Copyright Anthony Núñez - 2023</p>
+        </footer>
         <script src="./script.js"></script> 
     </body>
 </html>

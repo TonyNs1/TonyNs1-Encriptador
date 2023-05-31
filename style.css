@@ -1,16 +1,24 @@
-*{
-    background: #F3F5FC;
+body{
+    background: linear-gradient(#BBBBBB, #FFFFFF, #BBBBBB);
     font-family: 'Inter';
 }
 
+header h1{
+    font-size: 40px;
+    color: #0a3871;
+    margin: 2em auto;
+    text-align: center;
+}
+
 .logo{ 
-   width: 100px;
-   margin-top: 30px;    
+   width: 75px;
 }
 
 main{
-    display: inline-flex;
+    display: flex;
     margin: 25px 25px;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .text-area{
@@ -18,8 +26,11 @@ main{
     padding: 10px 10px;
     font-size: 20px;
     border: none;
+    border-radius: 15px;
     color: #0a3871;
     text-transform: lowercase;
+    box-shadow: 10px 10px 30px 15px #BBBBBB;
+    transition: 1s all;
 }
 
 ::placeholder{ color: #0a3871; }
@@ -28,21 +39,17 @@ main{
     }
 
 .text-area:hover{
-    border: 1px solid #0a3871;
-    border-radius: 24px;
     transform: scale(1.05);
-}
-
-.vector img{
-    width: 20px;
-    float: left;
-    margin-right: 5px;
 }
 
 .vector h3{
     color: #495057;
     font-size: 18px;
-    margin: 35px 0 37px 0;
+    margin: 25px 15px;
+}
+
+.vector h3:before{
+    content: "🚨";
 }
 
 .botones{
@@ -84,24 +91,19 @@ main{
     border-color: orange;
 }
 
-.btn-copiar:hover{
-    transform: scale(1.05);
-    border-color: orange;
-}
-
 .btn-encriptar:active{
     border-color: green;
+    opacity: 0.3;
 }
 
 .btn-desencriptar:active{
     border-color: green;
+    opacity: 0.3;
 }
 
 .caja-texto2{
     margin-left: 100px;
     border-radius: 15px;
-    display: inline-flex;
-    background-color: white;
 }
     
 .mensaje{
@@ -114,34 +116,42 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    border-radius: 24px;
+    border-radius: 15px;
     color: #0a3871;
+    box-shadow: 10px 10px 30px 15px #BBBBBB;
 }
     
 .mensaje:focus{
     outline: none;
 }
 
-#texto1{
+.avisos{
+    position: absolute;
     width: 336px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 25px;
     background: none;
     text-align: center;
-    margin: 50px 15px;
-    position: absolute;
+    top: 52%;
+    margin-left: 20px;
+}
+
+#texto1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+    margin: 0 auto;
 }
 
 #texto2{
-    width: 336px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 16px;
-    background: none;
-    text-align: center;
-    margin: 110px 0 0 15px;
+    margin: 10px auto;
+}
+
+.btncopiar{
     position: absolute;
+    top: 67.1%;
+    margin-left: 20px;
 }
 
 .btn-copiar{
@@ -154,50 +164,64 @@ main{
     width: 328px;
     transition: 1s all;
     font-size: 20px;
-    position: absolute;
-    top: 810px;
-    left: 810px;
+}
+
+.btn-copiar:hover{
+    transform: scale(1.05);
+    border-color: orange;
 }
 
 .btn-copiar:active{
     transition: 0s all;
     border-color: green;
+    opacity: 0.3;
 }
 
-@media screen and (max-width:480px) {
+footer{
+    text-align: center;
+    padding: 40px;
+}
 
-    .logo{
-        width: 20%;
-        margin-bottom: 10px;
+.copyright{
+    color: #0a3871;
+    font-size: 14px;
+    margin: 20px;
+}
+
+@media screen and (max-width:414px) {
+
+    header h1{
+        width: auto;
     }
 
     main{
-        width: auto;
+        width: 0 auto;
         display: inline;
     }
 
     .text-area{
-        width: 85%;
-        margin-left: 20px;
+        width: auto;
+        margin-left: 30px;
     }
 
     .vector{
-        margin: 0 10px;
-    }
-
-    .caja-texto2{
-        width: 95%;
-        margin: 5px 0 0 10px;
-        display: inline-block;
+        margin: 10px 10px;
     }
 
     .botones {
-        width: 95%;
-        margin: 10px 0 20px 10px; 
+        width: auto;
+        display: inline;
+        margin-left: 45px;
     }
 
-    .btn-encriptar, .btn-desencriptar{
-        font-size: small;
+    .btn-desencriptar{
+        margin: 5px 0 20px 45px;
+    }
+
+    .caja-texto2{
+        width: auto;
+        margin: 10px 0 10px 0;
+        display: inline;
     }
 
     .mensaje{
@@ -205,16 +229,68 @@ main{
         margin: 0px 0 10px 20px;
     }
 
-    #texto1, #texto2{
-        position: static;
-        margin: 1em;
+    .avisos{
+        margin: 45px;
+        top: 165%
     }
 
-    .btn-copiar{
-        font-size: small;
-        width: 95%;
-        margin: 15px 0 0 10px;
+    .btncopiar{
+        width: auto;
+        margin: 15px 0 0 45px;
         position: static;
-
     }
 }
+
+@media screen and (min-width:415px) and (max-width:768px){
+
+    header h1{
+        width: auto;
+    }
+
+    main{
+        width: 0 auto;
+        display: inline;
+    }
+
+    .text-area{
+        width: 95%;
+        margin: 0 0 10px 7px;
+    }
+
+    .vector{
+        margin: 0 10px;
+    }
+
+    .botones {
+        width: auto;
+        display: inline;
+        margin-left: 45px;
+    }
+
+    .btn-desencriptar{
+        margin: 0 0 20px 10px;
+    }
+
+    .caja-texto2{
+        width: auto;
+        margin: 10px 0 10px 7px;
+        display: inline;
+    }
+
+    .mensaje{
+        width: 95%;
+        margin: 0px 0 10px 0px;
+    }
+
+    .avisos{
+        margin: 20px 0 0 200px;
+        top: 140%;
+    }
+
+    .btncopiar{
+        width: auto;
+        margin: 15px 0 0 200px;
+        position: static;
+    }
+}
+
