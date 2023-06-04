@@ -110,7 +110,7 @@ main{
     width: 336px;
     padding: 10px 10px;
     font-size: 20px;
-    margin: 5px 5px 10px 5px;
+    margin: 0px 5px 10px 5px;
     background: white;
     background-image: url(imagenes/Muñeco.png);
     background-repeat: no-repeat;
@@ -195,13 +195,15 @@ footer{
     }
 
     main{
-        width: 0 auto;
+        width: auto;
         display: inline;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .text-area{
         width: auto;
-        margin-left: 30px;
+        margin: 10px auto;
     }
 
     .vector{
@@ -210,34 +212,35 @@ footer{
 
     .botones {
         width: auto;
-        display: inline;
-        margin-left: 45px;
+        display: inline-block;
+        margin: 10px auto;
     }
 
     .btn-desencriptar{
-        margin: 5px 0 20px 45px;
+        margin: 10px auto;
     }
 
     .caja-texto2{
         width: auto;
-        margin: 10px 0 10px 0;
-        display: inline;
+        margin: 10px auto;
+        
     }
 
     .mensaje{
-        width: 85%;
-        margin: 0px 0 10px 20px;
+        width: auto;
+        margin: 10px auto;
     }
 
     .avisos{
-        margin: 45px;
-        top: 165%
+        position:relative;
+        margin: 0 auto;
+        
     }
 
     .btncopiar{
         width: auto;
-        margin: 15px 0 0 45px;
-        position: static;
+        margin: 10px auto;
+        position: relative;
     }
 }
 
@@ -248,13 +251,15 @@ footer{
     }
 
     main{
-        width: 0 auto;
+        width: auto;
         display: inline;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .text-area{
         width: 95%;
-        margin: 0 0 10px 7px;
+        margin: 10px auto;
     }
 
     .vector{
@@ -263,34 +268,77 @@ footer{
 
     .botones {
         width: auto;
-        display: inline;
-        margin-left: 45px;
-    }
-
-    .btn-desencriptar{
-        margin: 0 0 20px 10px;
+        margin: 10px auto;
     }
 
     .caja-texto2{
         width: auto;
-        margin: 10px 0 10px 7px;
-        display: inline;
+        margin: 10px auto;
     }
 
     .mensaje{
         width: 95%;
-        margin: 0px 0 10px 0px;
+        margin: 10px auto;
     }
 
     .avisos{
-        margin: 20px 0 0 200px;
-        top: 140%;
+        position: relative;
+        margin: 10px auto;
     }
 
     .btncopiar{
         width: auto;
-        margin: 15px 0 0 200px;
-        position: static;
+        margin: 10px auto;
+        position: relative;
     }
 }
 
+@media screen and (min-width:769px) and (max-width:2000px){
+    
+    header h1{
+        width: auto;
+    }
+
+    main{
+        width: auto;
+        display: inline;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .text-area{
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .vector{
+        margin: 0 10px;
+    }
+
+    .botones {
+        width: auto;
+        margin: 10px auto;
+    }
+
+    .caja-texto2{
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .mensaje{
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .avisos{
+        position: relative;
+        margin: 10px auto;
+    }
+
+    .btncopiar{
+        width: auto;
+        margin: 10px auto;
+        position: relative;
+    }
+
+}
